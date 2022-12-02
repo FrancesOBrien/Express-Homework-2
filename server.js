@@ -19,6 +19,7 @@ app.get('/magic/:query', (req, res) =>{
     let response = replies[Math.floor(Math.random() * replies.length)]
     res.send(`<h1>${req.params.query}  <br>  ${response}</h1>`)
 })
+
 //tell app where to listen, confirm listening
 app.listen(3000, () => {
     console.log('listening now');
